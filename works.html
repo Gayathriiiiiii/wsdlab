@@ -165,6 +165,8 @@ li a:hover:not(.active) {
 .active {
   background-color: lightgreys;
 }
+
+
    </style>
       </head>
 
@@ -181,10 +183,12 @@ li a:hover:not(.active) {
                           </ul>
                         </header>
                     </div>                    
-                       
+                    <video width="320" height="240" controls>
+                      <source src="asianpaints.mp4" type="video/mp4">
+                    </video>
                 </div>
             </section>
-
+          
             <!-- Services -->
         
             
@@ -267,8 +271,8 @@ li a:hover:not(.active) {
                                 easing: 'linear', 
                                 queue: false, 
                             }                
-                        });             
-
+                        });        
+                        
                         // don't proceed if already selected
                         if ( $this.hasClass('selected') ) { 
                             return false; 
