@@ -286,7 +286,6 @@ li a:hover:not(.active) {
 }
 footer{
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     background: #111;
@@ -333,7 +332,7 @@ footer{
   top: 50%;
   font-family: "Clip";
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 40px;
   color: rgba(30, 14, 85, 0.63);
   text-shadow: 0 0 0.6rem #b5afe9, 0 0 1.5rem #828185,
     -0.2rem 0.1rem 1rem #8e8e94, 0.2rem 0.1rem 1rem #a1a1a5,
@@ -518,11 +517,13 @@ footer{
         </video>
         <div class="container-fluid" id="main">
 
-            <!-- Home -->   
+            <!-- Home -->  
             <header><ul>
-              <li><a class="active" href="#home">Home</a></li>
-               <li><a href="works.html">works</a></li>
+              <li><a class="active" href="#Home">Home</a></li>
+               <li><a href="works.html">Register</a></li>
                <li><a href="#contact">Contact</a></li>
+               <li><a href="emplogin.html" style="margin-left: 1000px;">Employee login</a></li>
+            
               </ul>
             </header>
             <section class="parallax-window tm-section tm-section-home" id="home" data-parallax="scroll">
@@ -544,44 +545,44 @@ footer{
                     </div>                       
              <div class="tm-textbox tm-white-bg">
                         <h2 class="tm-green-text tm-section-title">Welcome!</h2>
-                        <p> <a rel="nofollow" href="login.html" target="_blank" style="color: burlywood;font-weight:bold;">RenovationManiac</a><br>
-                            <span>Providing best service.</span></p><br>
-                        <a href="login.html" class="tm-btn">Login</a>
+                        <p> <a rel="nofollow" href="login.html" target="_blank" style="color: burlywood;font-weight:bold">RenovationManiac providing best service...</a><br>
+                            <span>Register now!</span></p><br>
                     </div>     
                 </div>
-                 <!-- Services -->
+      
+                 <!-- TYPES -->
                   <section class="parallax-window tm-section tm-section-services" id="services" data-parallax="scroll" data-image-src="ren1.jpg">
                     <div class="tm-page-content-width">
                     <div class="tm-translucent-white-bg tm-content-box tm-content-box-right tm-textbox-full-height">
                         <div class="tm-content-box-inner">
-                            <h2 class="tm-section-title">Our Services</h2>
+                            <h2 class="tm-section-title">TYPES</h2>
                             <article class="flow">
  
   <div class="team">
     <ul class="auto-grid" role="list">
       <li>
-        <a href="https://swop.link/cool" target=_blank" class="profile">
+        <a href="#kitchen" target=_blank" class="profile">
           <h2 class="profile__name">KITCHEN</h2>
           <p>see more</p>
           <img alt="KITCHEN" src="kitchen1.jpg" />
         </a>
       </li>
       <li>
-        <a href="https://swop.link/cool" target=_blank" class="profile">
+        <a href="#bedroom" target=_blank" class="profile">
           <h2 class="profile__name">BEDROOM</h2>
           <p>See more</p>
           <img alt="Bedroom" src="ren2.jpg" />
         </a>
       </li>
       <li>
-        <a href="https://swop.link/cool" target=_blank" class="profile">
+        <a href="#fullhouse" target=_blank" class="profile">
           <h2 class="profile__name">Full house</h2>
           <p>See more</p>
           <img alt="Full house renovation" src="ren1.jpg" />
         </a>
       </li>
       <li>
-        <a href="https://swop.link/cool" target=_blank" class="profile">
+        <a href="#garden" target=_blank" class="profile">
           <h2 class="profile__name">Garden</h2>
           <p>see more</p>
           <img alt="Garden" src="garden.jfif" />
@@ -589,27 +590,33 @@ footer{
       </li>
     </ul>
   </div>
-</article>           
-            </section>
-            <!-- Contact -->
-           <br><br>
-        <footer>
-            <div class="footer-content">
-
-                <h3>Renovation Maniac</h3>
-    <!--add all information -->
-    <p>All Right Reserved.2021.RenovationManiac project Pvt.Ltd.</p>
-
-     <ul class="socials">
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
- </ul>
+</article>  
+</div>   
 </div>
+</div>
+</section>
+<br>
+<br>
 
-</footer>
+ 
+         
+            <footer>
+              <div class="footer-content">
+  
+                  <h3>Renovation Maniac</h3>
+      <!--add all information -->
+      <p>All Right Reserved.2021.RenovationManiac project Pvt.Ltd.</p>
+  
+       <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   </ul>
+  </div>
+  
+  </footer>
         <!-- load JS files -->
         <script src="js/jquery-1.11.3.min.js"></script>         <!-- https://jquery.com/download/ -->
         <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
@@ -644,7 +651,8 @@ footer{
                                 easing: 'linear', 
                                 queue: false, 
                             }                
-                        });             
+                        });     
+                      
 
                         // don't proceed if already selected
                         if ( $this.hasClass('selected') ) { 
