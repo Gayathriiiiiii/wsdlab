@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="RenovationManiac">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Customer" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Name" type="xs:string"></xs:element>
+<xs:element name="Age" type="xs:integer"></xs:element>
+<xs:element name="Address" type="xs:string"></xs:element>
+<xs:element name="Renovation-Type" type="xs:string"></xs:element>
+<xs:element name="Designtype" type="xs:string"></xs:element>
+<xs:element name="Budget" type="Mybugd"></xs:element>
+<xs:element name="Status" type="xs:string"></xs:element>
+<xs:element name="Area" type="MyArea"></xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:simpleType name="Mybudg">
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="50000"></xs:minInclusive>
+<xs:maxInclusive value="50000000"></xs:maxInclusive>
+</xs:restriction>
+<xs:simpleType name="MyArea">
+<xs:restriction base="xs:integer">
+<xs:pattern value="[90-400]"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>
