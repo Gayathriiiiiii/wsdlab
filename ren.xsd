@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="RenovationManiac">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Customer" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Name" type="xs:string"></xs:element>
+<xs:element name="Date" type="xs:date"></xs:element>
+<xs:element name="Address" type="xs:string"></xs:element>
+<xs:element name="Renovation-Type" type="xs:string"></xs:element>
+<xs:element name="Designtype" type="xs:string"></xs:element>
+<xs:element name="Budget" type="Mybug"></xs:element>
+<xs:element name="Status" type="status-type"></xs:element>
+<xs:element name="Area" type="xs:string"></xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:simpleType name="Mybug">
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="50000"></xs:minInclusive>
+<xs:maxInclusive value="50000000"></xs:maxInclusive>
+</xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="status-type">
+<xs:restriction base="xs:string">
+    <xs:enumeration value="Ongoing"/>
+    <xs:enumeration value="completed"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:schema>

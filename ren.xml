@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ren.xsl"?>
+<RenovationManiac xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="ren.xsd">
+  <Customer>
+    <Name>Rahul</Name>
+    <Date>22-03-21</Date>
+    <Address>Tilaknagar</Address>
+    <Renovation-Type>Office renovation</Renovation-Type>
+    <Designtype>Industrial</Designtype>
+    <Budget>600000</Budget>
+    <Status>Ongoing</Status>
+    <Area>250sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Anuj</Name>
+    <Date>31-03-21</Date>
+    <Address>Jayanagar</Address>
+    <Renovation-Type>Full house renovation</Renovation-Type>
+    <Designtype>Bohemian</Designtype>
+    <Budget>760000</Budget>
+    <Status>completed</Status>
+    <Area>2500sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Riya</Name>
+    <Date>27-03-21</Date>
+    <Address>Girinagar</Address>
+    <Renovation-Type>Garden renovation</Renovation-Type>
+    <Designtype>Urban-Modern</Designtype>
+    <Budget>230000</Budget>
+    <Status>Ongoing</Status>
+    <Area>500sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Anuj</Name>
+    <Date>12-03-21</Date>
+    <Address>Jayanagar</Address>
+    <Renovation-Type>Full house renovation</Renovation-Type>
+    <Designtype>Bohemian</Designtype>
+    <Budget>760000</Budget>
+    <Status>completed</Status>
+    <Area>2500sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Esha</Name>
+    <Date>29-03-21</Date>
+    <Address>Kormangla</Address>
+    <Renovation-Type>Kitchen renovation</Renovation-Type>
+    <Designtype>Comtemprary</Designtype>
+    <Budget>450000</Budget>
+    <Status>completed</Status>
+    <Area>1000sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Anitha</Name>
+    <Date>25-03-21</Date>
+    <Address>MG-Road</Address>
+    <Renovation-Type>Bedroom renovation</Renovation-Type>
+    <Designtype>Bohemian</Designtype>
+    <Budget>660000</Budget>
+    <Status>Ongoing</Status>
+    <Area>1500sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Becky</Name>
+    <Date>25-03-21</Date>
+    <Address>HAL</Address>
+    <Renovation-Type>Bedroom renovation</Renovation-Type>
+    <Designtype>Bohemian</Designtype>
+    <Budget>760000</Budget>
+    <Status>Ongoing</Status>
+    <Area>1700sqft</Area>
+  </Customer>
+  <Customer>
+    <Name>Shree</Name>
+    <Date>26-03-21</Date>
+    <Address>Banargetta</Address>
+    <Renovation-Type>Kitchen renovation</Renovation-Type>
+    <Designtype>Urban-Modern</Designtype>
+    <Budget>60000</Budget>
+    <Status>completed</Status>
+    <Area>1600sqft</Area>
+  </Customer>
+</RenovationManiac>
