@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
     <link rel="stylesheet" href="dashboard.css">
+    <script src = "renovation.js" ></script>
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    
+
     
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -107,103 +108,20 @@
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <h1 style="text-align:center">Customers Info</h1>
-                  <table border="2" align="center">
-                    <tr>
-                       <th>Name</th>
-                       <th>Date</th>
-                       <th>Address</th>
-                       <th>Renovation-Type</th>
-                       <th>Designtype</th>
-                       <th>Budget</th>
-                       <th>Status</th>
-                       <th>Area</th>
-                    </tr>
-                    <tr>
-                       <td>Anuj</td>
-                       <td>12-03-21</td>
-                       <td>Jayanagar</td>
-                       <td>Full house renovation</td>
-                       <td>Bohemian</td>
-                       <td>760000</td>
-                       <td>completed</td>
-                       <td>2500sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Rahul</td>
-                       <td>22-03-21</td>
-                       <td>Tilaknagar</td>
-                       <td>Office renovation</td>
-                       <td>Industrial</td>
-                       <td>600000</td>
-                       <td>Ongoing</td>
-                       <td>250sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Becky</td>
-                       <td>25-03-21</td>
-                       <td>HAL</td>
-                       <td>Bedroom renovation</td>
-                       <td>Bohemian</td>
-                       <td>760000</td>
-                       <td>Ongoing</td>
-                       <td>1700sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Anitha</td>
-                       <td>25-03-21</td>
-                       <td>MG-Road</td>
-                       <td>Bedroom renovation</td>
-                       <td>Bohemian</td>
-                       <td>660000</td>
-                       <td>Ongoing</td>
-                       <td>1500sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Shree</td>
-                       <td>26-03-21</td>
-                       <td>Banargetta</td>
-                       <td>Kitchen renovation</td>
-                       <td>Urban-Modern</td>
-                       <td>60000</td>
-                       <td>completed</td>
-                       <td>1600sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Riya</td>
-                       <td>27-03-21</td>
-                       <td>Girinagar</td>
-                       <td>Garden renovation</td>
-                       <td>Urban-Modern</td>
-                       <td>230000</td>
-                       <td>Ongoing</td>
-                       <td>500sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Esha</td>
-                       <td>29-03-21</td>
-                       <td>Kormangla</td>
-                       <td>Kitchen renovation</td>
-                       <td>Comtemprary</td>
-                       <td>450000</td>
-                       <td>completed</td>
-                       <td>1000sqft</td>
-                    </tr>
-                    <tr>
-                       <td>Anuj</td>
-                       <td>31-03-21</td>
-                       <td>Jayanagar</td>
-                       <td>Full house renovation</td>
-                       <td>Bohemian</td>
-                       <td>760000</td>
-                       <td>completed</td>
-                       <td>2500sqft</td>
-                    </tr>
-                 </table>
-         
                 </div>
               </div>
             </div>
+            <table  id='customer_info' class = 'customer_table'>
+              <button  class="btn btn-primary" onclick = 'renovationXML()'>Show </button>
+ 
+              <button  class="btn btn-warning" onclick = "removeNodeElement()">Remove designtype</button>
+              <button class="btn btn-secondary" onclick = "changeNodeValue()">Change status</button>
+              <button  class="btn btn-success" onclick = "addNewElement()">Add new info</button>
+                     
+            </table>
     
+    
+        
     </div>
   </div>
 </section>
