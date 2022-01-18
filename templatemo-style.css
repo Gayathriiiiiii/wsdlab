@@ -65,16 +65,17 @@ p {
 }
 
 .tm-textbox {
-	max-width: 600px;
-	width: 100%;
+	max-width: 800px;
+	width: 200%;
 	padding: 50px;
 	overflow: auto;
+	height: 800px;
 }
 
 .tm-textbox-full-height { min-height: 950px; }
 
 .tm-white-bg {
-	background-color: white;
+	background-color: lightgray;
 	color: #676362;
 }
 
