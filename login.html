@@ -187,6 +187,101 @@ li a:hover:not(.active) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RenovationManiac</title>
 </head>
+<script type="text/javascript">
+
+    function user(event){
+        let code=event.which;
+        if(code>47 && code<58){
+        return false;
+        }
+        else return True;
+    }
+
+    
+    function phoneval(event){
+        let code=event.which;
+        if(code>64 && code<223){
+        return false;
+        }
+        else return True;
+    }
+
+  function checkForm(form)
+  {
+    if(form.user.value.trim() == "") {
+      alert("Error: Username cannot be blank!");
+      form.user.focus();
+      return false;
+    }
+    re = /^\w+$/;
+    if(!re.test(form.user.value.trim())) {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      form.user.focus();
+      return false;
+    }
+
+    re=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.(christuniversity.in)$/;
+    if(!re.test(form.email.value) ) {
+      alert("Error: invalid e-mail address!");
+      form.email.focus();
+      return false;
+    }
+
+    
+    
+
+    if(form.pwd1.value.trim() != "" && form.pwd1.value.trim() == form.pwd2.value.trim()) {
+      if(form.pwd1.value.length < 6) {
+        alert("Error: Password must contain at least six characters!");
+        form.pwd1.focus();
+        return false;
+      }
+      if(form.pwd1.value.trim() == form.user.value.trim()) {
+        alert("Error: Password must be different from Username!");
+        form.pwd1.focus();
+        return false;
+      }
+
+     re=/[1-9][0-9]{10}/;
+      if(!re.test(form.phone.value.trim())) {
+        alert("Error: phone number must contain only 10 didgits!");
+        form.phone.focus();
+        return false;
+      }
+
+
+
+      re = /[0-9]/;
+      if(!re.test(form.pwd1.value.trim())) {
+        alert("Error: password must contain at least one number (0-9)!");
+        form.pwd1.focus();
+        return false;
+      }
+      
+
+      re = /[a-z]/;
+      if(!re.test(form.pwd1.value.trim())) {
+        alert("Error: password must contain at least one lowercase letter (a-z)!");
+        form.pwd1.focus();
+        return false;
+      }
+      re = /[A-Z]/;
+      if(!re.test(form.pwd1.value.trim())) {
+        alert("Error: password must contain at least one uppercase letter (A-Z)!");
+        form.pwd1.focus();
+        return false;
+      }
+    } else {
+      alert("Error: Please check that you've entered and confirmed your password!");
+      form.pwd1.focus();
+      return false;
+    }
+
+    alert("You entered a valid password: " + form.pwd1.value);
+    return true;
+  }
+
+</script>
 <body>
     <header><ul>
         <li><a class="active" href="index.html">Home</a></li>
@@ -203,18 +298,22 @@ li a:hover:not(.active) {
                 <div class="sign-in-htm">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <input id="user" type="text" class="input" onkeypress="return user(event);">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
                         <input id="pass" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
+                        <label for="email" class="label">Email Address</label>
+                        <input id="email" type="text" class="input">
+                    </div>
+                    <div class="group">
                         <input id="check" type="checkbox" class="check" checked>
                         <label for="check"><span class="icon"></span> Keep me Signed in</label>
                     </div>
                     <div class="group">
-                        <a href="#dashboard"><input type="submit" class="button"  value="login"></a>
+                        <a href="#dashboard"><input type="submit" class="button" value="login"></a>
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
