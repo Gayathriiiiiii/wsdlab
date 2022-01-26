@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       
-      <form action="dashboard.html" class="form" id="form">
+      <form action="dashboard.html" onsubmit ="validateForm(event)" class="form" id="form">
         <div class="form-control">
           <label for="firstname">First Name</label>
           <input
@@ -110,7 +110,7 @@
           <i class="fas fa-exclamation-circle"></i>
           <small>Error</small>
         </div>
-        <button type = 'submit' onsubmit = "validateForm(event)">Submit</button>
+        <button type = 'submit' onsubmit ="validateForm(event)">Submit</button>
       </form>
     </div>
   </body>
